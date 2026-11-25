@@ -1,0 +1,22 @@
+{
+  "_note": "TEMPLATE ONLY - this file is not loaded by the website. Copy the object below into the \"projects\" array in data/projects.json and replace every value with your real project details.",
+  "projects": [
+    {
+      "id": "replace-with-a-short-unique-slug",
+      "title": "Replace with your project title",
+      "category": "video-editing",
+      "shortDescription": "One sentence shown on the project card.",
+      "fullDescription": "The full story of the project, shown on the project page.\n\nUse a blank line (\\n\\n) to start a new paragraph.",
+      "thumbnail": "https://example.com/thumbnail.jpg",
+      "gallery": [
+        "https://example.com/frame-1.jpg",
+        "projects/video-editing/replace-with-a-short-unique-slug/frame-2.webp"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=XXXXXXXXXXX",
+      "tools": ["Adobe Premiere Pro", "DaVinci Resolve"],
+      "date": "2026-01-15",
+      "featured": false,
+      "clientProject": false
+    }
+  ]
+}
