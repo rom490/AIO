@@ -32,6 +32,15 @@ export function parseVideo(url) {
     };
   }
 
+  m = u.match(/instagram\.com\/(?:[\w.]+\/)?(reel|reels|p|tv)\/([\w-]+)/i);
+  if (m) {
+    const kind = m[1].toLowerCase() === "reels" ? "reel" : m[1].toLowerCase();
+    return {
+      type: "embed", provider: "Instagram", portrait: true,
+      src: `https://www.instagram.com/${kind}/${m[2]}/embed/`
+    };
+  }
+
   m = u.match(/vimeo\.com\/(?:video\/)?(\d+)(?:\/(\w+))?/);
   if (m) {
     return {
