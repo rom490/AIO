@@ -147,9 +147,7 @@ function videoHTML(p) {
   const v = parseVideo(p.videoUrl);
   if (!v) return "";
   if (v.type === "embed") {
-    const cls = v.portrait ? "pv-video pv-video--portrait" : "pv-video";
-    const open = v.portrait ? `<a class="link pv-open" href="${esc(p.videoUrl)}" target="_blank" rel="noopener">Open on ${esc(v.provider)} <span aria-hidden="true">↗</span></a>` : "";
-    return `<div class="${cls}"><iframe src="${esc(v.src)}" title="${esc(p.title)} — video" loading="lazy" allow="fullscreen; picture-in-picture; encrypted-media" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>${open}`;
+    return `<div class="pv-video"><iframe src="${esc(v.src)}" title="${esc(p.title)} — video" loading="lazy" allow="fullscreen; picture-in-picture; encrypted-media" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>`;
   }
   if (v.type === "file") {
     const poster = thumbOf(p);

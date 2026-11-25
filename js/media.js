@@ -21,6 +21,7 @@ export function resolvePath(p) {
 export function parseVideo(url) {
   if (!url || typeof url !== "string") return null;
   const u = url.trim();
+  if (/instagram\.com/i.test(u)) return null; // Instagram links are not shown; use YouTube, Vimeo, Drive or a direct file
   let m;
 
   m = u.match(/(?:youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/|shorts\/|live\/)|youtu\.be\/)([\w-]{11})/);
@@ -29,15 +30,6 @@ export function parseVideo(url) {
       type: "embed", provider: "YouTube",
       src: `https://www.youtube-nocookie.com/embed/${m[1]}?rel=0`,
       thumb: `https://i.ytimg.com/vi/${m[1]}/hqdefault.jpg`
-    };
-  }
-
-  m = u.match(/instagram\.com\/(?:[\w.]+\/)?(reel|reels|p|tv)\/([\w-]+)/i);
-  if (m) {
-    const kind = m[1].toLowerCase() === "reels" ? "reel" : m[1].toLowerCase();
-    return {
-      type: "embed", provider: "Instagram", portrait: true,
-      src: `https://www.instagram.com/${kind}/${m[2]}/embed/`
     };
   }
 
