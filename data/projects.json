@@ -1,6 +1,19 @@
 {
   "projects": [
     {
+      "id": "thanks-dad",
+      "title": "Thanks Dad",
+      "category": "video-editing",
+      "shortDescription": "",
+      "fullDescription": "",
+      "thumbnail": "projects/video-editing/thanks-dad/thumb.webp",
+      "gallery": [],
+      "videoUrl": "projects/video-editing/thanks-dad/video.mp4",
+      "tools": [],
+      "featured": true,
+      "clientProject": false
+    },
+    {
       "id": "what-am-i-doing-in-this-miserable-place",
       "title": "What Am I Doing in This Miserable Place",
       "category": "video-editing",
