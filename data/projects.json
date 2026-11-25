@@ -1,3 +1,17 @@
 {
-  "projects": []
+  "projects": [
+    {
+      "id": "what-am-i-doing-in-this-miserable-place",
+      "title": "What Am I Doing in This Miserable Place",
+      "category": "video-editing",
+      "shortDescription": "",
+      "fullDescription": "",
+      "thumbnail": "",
+      "gallery": [],
+      "videoUrl": "https://www.instagram.com/reel/Df6vd1ksHdW/",
+      "tools": [],
+      "featured": true,
+      "clientProject": false
+    }
+  ]
 }
