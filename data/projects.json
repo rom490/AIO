@@ -1,6 +1,19 @@
 {
   "projects": [
     {
+      "id": "raw-vs-ai-edited",
+      "title": "Raw vs AI + Edited",
+      "category": "ai-experiments",
+      "shortDescription": "",
+      "fullDescription": "",
+      "thumbnail": "projects/ai-experiments/raw-vs-ai-edited/thumb.webp",
+      "gallery": [],
+      "videoUrl": "projects/ai-experiments/raw-vs-ai-edited/video.mp4",
+      "tools": [],
+      "featured": true,
+      "clientProject": false
+    },
+    {
       "id": "thanks-dad",
       "title": "Thanks Dad",
       "category": "video-editing",
